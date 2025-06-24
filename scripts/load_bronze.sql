@@ -6,7 +6,7 @@ BULK INSERT bronze.crm_cust_info
 			FIELDTERMINATOR = ',',
 			TABLOCK
 		);
-
+TRUNCATE TABLE bronze.crm_prd_info;
 BULK INSERT bronze.crm_prd_info
 		FROM 'C:\Temp\source_crm.csv\prd_info.csv'
 		WITH (
@@ -14,7 +14,7 @@ BULK INSERT bronze.crm_prd_info
 			FIELDTERMINATOR = ',',
 			TABLOCK
 		);
-
+TRUNCATE TABLE bronze.crm_sales_details;
 BULK INSERT bronze.crm_sales_details
 		FROM 'C:\Temp\source_crm.csv\sales_details.csv'
 		WITH (
